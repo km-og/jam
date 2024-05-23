@@ -1,0 +1,25 @@
+.main {
+  position: relative;
+  width: 89.5%;
+  margin: 37px auto 0;
+  padding: 0 0 100px;
+  min-height: 850px;
+}
+
+.main__greeting {
+  margin: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -1.7px;
+}
+
+.main__greeting::after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  margin: 4px 0 0 10px;
+  background: url("../../images/hand.webp") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+}

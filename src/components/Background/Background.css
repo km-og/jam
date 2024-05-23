@@ -1,0 +1,21 @@
+.background__gradient {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.background__gradient:first-of-type {
+  top: -6%;
+  right: 30%;
+  transform: translateX(50%);
+  background: radial-gradient(closest-side, #eacedd, #ececf4);
+}
+
+.background__gradient:last-of-type {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, #c9cef4, #ececf4);
+}

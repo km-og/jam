@@ -1,0 +1,99 @@
+.card {
+  width: 100%;
+  max-height: 226px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  padding: 25px 13px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.card:nth-of-type(even) {
+  margin-top: 34px;
+}
+
+.card__preview {
+  width: 70%;
+  height: 100%;
+  max-height: 56px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card__texts {
+  margin: 0 auto 0;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.card__title {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.card__composition {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+.card__box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.card__price {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: -0.6px;
+}
+
+.card__btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.card__btn::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../icons/bascet-dark.svg") no-repeat center;
+  background-size: 15px auto;
+}
+
+.card__btn:hover {
+  background-color: var(--accent-color);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.card__btn_type_active {
+  background-color: var(--accent-color);
+}
+
+.card__btn_type_active:hover {
+  background-color: rgba(227, 23, 102, 0.5);
+}

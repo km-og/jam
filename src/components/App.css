@@ -1,0 +1,23 @@
+.page {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--main-color);
+  position: relative;
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+}
+
+.content {
+  overflow: hidden;
+  max-width: 335px;
+  width: 100%;
+  margin: 0 auto;
+}
